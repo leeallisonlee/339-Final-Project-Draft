@@ -91,7 +91,7 @@ footer nav li a {
     justify-content: center;
     justify-items:center;
     margin-bottom: 50px;
-    grid-template-rows: repeat(9, 280px);
+    grid-template-rows: repeat(9, 290px);
 }
 
 
