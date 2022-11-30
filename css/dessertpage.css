@@ -89,16 +89,31 @@ footer nav li a {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 40px;
-    gap: 80px;
+    gap: 60px;
     justify-content: center;
 }
 
-/* style items in grid */
+/* center figure */
+.dessert_gallery figure {
+    text-align: center;
+}
+
+.dessert_gallery br {
+    display: block;
+    content: "";
+    border-bottom: 5px solid transparent;
+}
+/* style items in flex */
 .dessert_gallery img {
     border-radius: 20px; 
     width: 70%;
     height: 80%;
-    
+    text-align: center;
+}
+/* caption decoration */
+.dessert_gallery figcaption {
+    font-size: 12px;
+    text-align: center;
 }
 
 /* tablet view */
