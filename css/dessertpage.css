@@ -89,7 +89,7 @@ footer nav li a {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 40px;
-    gap: 40px;
+    gap: 80px;
     justify-content: center;
 }
 
@@ -180,8 +180,10 @@ footer nav li a {
     /* style flexbox */
    .dessert_gallery img {
         border-radius: 20px; 
-        width: 25%;
-        height: 80%;
+        /* width: 25%;
+        height: 80%; */
+        width: 189px;
+        height: 252px;
     
     }
 }

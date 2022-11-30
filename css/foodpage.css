@@ -87,7 +87,7 @@ footer nav li a {
 
 .food_gallery {
     display: grid;
-    grid-template-columns: 70%;
+    grid-template-columns: 100%;
     justify-content: center;
     justify-items:center;
     margin-bottom: 50px;
@@ -131,12 +131,13 @@ footer nav li a {
 
    .food_gallery {
         display: grid;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 40% 40%;
         justify-content: center;
         justify-items:center;
         margin-bottom: 70px;
         row-gap: 20px;
         grid-template-rows: repeat(5, 280px);
+        height: auto;
    }
 
    /* .food_gallery img {
