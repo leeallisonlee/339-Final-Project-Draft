@@ -54,6 +54,7 @@ footer nav {
     right: 0px;
     bottom: 0px;
 }
+
 footer nav li {
     display: inline;
     padding-right: 10px;
@@ -133,6 +134,11 @@ footer nav li a {
     height: auto;
 }
 
+.desktop {
+    display: none;
+}
+
+
 /* Underline on Focus */
 a:hover, a:focus {
 text-decoration: underline;
@@ -156,31 +162,6 @@ text-decoration: underline;
     border: 2px solid;
 }
 
-/* Animation? */
-.seoul {
-    overflow: hidden;
-}
-
-.seoul h2 {
-    display: inline-block;
-    white-space: nowrap;
-    
-    
-    /* animation properties */
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    
-    -moz-animation: my-animation 8s linear infinite;
-    -webkit-animation: my-animation 8s linear infinite;
-    animation: my-animation 8s linear infinite;
-    
-}
-/* for Chrome */
-@-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(120%); }
-    to { -webkit-transform: translateX(-200%); }
-}
 
 
 
@@ -251,6 +232,41 @@ text-decoration: underline;
     .description p {
         font-size: 19px;
     }
+
+    /* change picture of background */
+    .desktop {
+        display:unset;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Animation? */
+    .seoul {
+        overflow: hidden;
+    }
+
+    .seoul h2 {
+        display: inline-block;
+        white-space: nowrap;
+        
+        
+        /* animation properties */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        
+        -moz-animation: my-animation 8s linear infinite;
+        -webkit-animation: my-animation 8s linear infinite;
+        animation: my-animation 8s linear infinite;
+        
+    }
+    /* for Chrome */
+    @-webkit-keyframes my-animation {
+        from { -webkit-transform: translateX(120%); }
+        to { -webkit-transform: translateX(-200%); }
+    }
 }
 
 /* Desktop view */
@@ -301,9 +317,15 @@ text-decoration: underline;
     }
 
     
-    /* Animation? */
+        /* Animation? */
+    .seoul {
+        overflow: hidden;
+    }
 
     .seoul h2 {
+        display: inline-block;
+        white-space: nowrap;
+        
         
         /* animation properties */
         -moz-transform: translateX(100%);
@@ -315,6 +337,11 @@ text-decoration: underline;
         animation: my-animation 8s linear infinite;
         
     }
+    /* for Chrome */
+    @-webkit-keyframes my-animation {
+        from { -webkit-transform: translateX(120%); }
+        to { -webkit-transform: translateX(-200%); }
+    }
 
     /* Style cover photo */
     .coverimg img {
@@ -325,3 +352,17 @@ text-decoration: underline;
     
 }
 
+/* Reduced motion */
+
+@media (prefers-reduced-motion) {
+
+    .seoul h2 {
+        animation: none !important;
+        text-align: center;
+        display:inline;
+        white-space:initial;
+    }
+
+
+
+}
