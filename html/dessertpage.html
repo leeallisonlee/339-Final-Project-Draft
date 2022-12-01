@@ -44,7 +44,7 @@
 
         <div class = "dessert_gallery container">
             <figure class = "mix bread" data-order = "1"><img src = "../dessert_images/operacake.jpeg" alt = "Tartine Bakery Lemon Meringue Cake & Iced Americano"> <figcaption>Lemon Meringue Cake & Iced Americano</figcaption><br></br><figcaption>from Tartine Bakery Seoul</figcaption></figure>
-            <figure class = "mix bread"><img src = "../dessert_images/croissant.jpeg" alt = "Caramel Banana Creme Croissant from Ong-geun-dal Seoul"><figcaption>Caramel Banana Creme Croissant</figcaption><br></br><figcaption>from Ong-geun-dal Seoul</figcaption></figure>
+            <figure class = "mix bread" data-order = "2"><img src = "../dessert_images/croissant.jpeg" alt = "Caramel Banana Creme Croissant from Ong-geun-dal Seoul"><figcaption>Caramel Banana Creme Croissant</figcaption><br></br><figcaption>from Ong-geun-dal Seoul</figcaption></figure>
             <figure class = "mix others"><img src = "../dessert_images/icecream.jpeg" alt = "4 different Ice Cream Cups from Baskin Robbins Seoul"><figcaption>31 Yogurt, Mint Chocolate Chip</figcaption><br></br><figcaption>and Mango from Baskin Robbins Seoul</figcaption></figure>
             <figure class = "mix drinks"><img src = "../dessert_images/starbucks.jpeg" alt = "Grapefruit Honey Black Tea and Vanilla Bean Cold Brew from Starbucks Seoul"><figcaption>Grapefruit Honey Black Tea and Vanilla</figcaption><br></br><figcaption>Bean Cold Brew from Starbucks Seoul</figcaption></figure>
             <figure class = "mix others"><img src = "../dessert_images/strawberryice.jpeg" alt = "Strawberry Shaved Ice from Dong-Bing-Go Seoul"><figcaption>Strawberry Shaved Ice with Condensed</figcaption><br></br><figcaption>Milk from Dong-Bing-Go Seoul</figcaption></figure>
@@ -58,11 +58,6 @@
 
   </body>
 
-  <script>
-    var containerEl = document.querySelector('.container');
-
-    var mixer = mixitup(containerEl);
-  </script>
 
   <!-- Footer -->
   <footer>
@@ -77,9 +72,13 @@
 
   </footer>
 
-  <script src="js/mixitup.min.js"></script>
+  <script src="../js/mixitup.min.js"></script>
 
- 
+  <script>
+    var containerEl = document.querySelector('.container');
+
+    var mixer = mixitup(containerEl);
+  </script>
 
 
 </html>
